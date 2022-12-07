@@ -70,33 +70,20 @@ ________________________________
 - atacando: do tipo booleano. Indica se o player está ou não atacando;
 - pulando: do tipo booleano. Indica se o player está ou não pulando.
 
-> Output Format
-> O algoritmo deve imprimir:
+> A saida de imprimir:
 - PARADO: se o player estiver no chão e com velocidade zero;
 - ANDANDO: se tiver no chão e com velocidade de máximo 30;
 - CORRENDO: se estiver no chão e com velocidade maior que 30;
 - PULANDO: não estiver no chão;
 - ATACANDO: se eles estiver atacando. Essa animação sobrepõem às demais.
 
-> Sample Input 0
+> Entrada
 ```cmd
 30
 true
 false
 ```
-> Sample Output 0
+> Saída
 ```cmd
 PULANDO
 ```
-
-
-Apesar do player pussuir uma velocidade, ele está pulando.
-
-Sample Input 1
-
-20
-true
-true
-Sample Output 1
-
-ATACANDO
