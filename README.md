@@ -2,6 +2,60 @@
 
 # Laço de decisão
 
+### Nivel do Tanque
+
+> Um sensor de nível consegue detectar quando um tanque está quase vazio. Quando o nível do tanque é menor que 10 centímetros. Quando o tanque está quase vazio, aparece no console a mensagem TANQUE QUASE VAZIO. Caso contrário, a mensagem que aparece é TANQUE OK.
+
+> A entrada deste problema será sempre uma variável do tipo number chamada nivel que representa o nível atual do tanque, em centímetros.
+
+> Você deve imprimir na tela TANQUE QUASE VAZIO caso o nível seja menor que 10 centímetros. Caso contrário, imprima na tela TANQUE OK.
+
+> OBS: A mensagem deverar ser sempre idêntica e em maiuscúlas.
+
+> Entrada
+````cmd
+3
+````
+
+> Saída
+````cmd
+TANQUE QUASE VAZIO
+````
+
+________________________________
+
+### Resultado do jogo
+
+> Você está trabalhando num site de notícias esportivas e ficou responsável pelo "Minuto a minuto" de jogos de futebol. Nesta parte do site é exibido o placar do jogo e informações atualizadas a cada minuto sobre a partida. A página já foi desenvolvida por um colega e o seu papel é fazer uma pequena atualização. Dado o placar de um jogo, você precisa exibir na tela um pequeno status que informa:
+
+- Se o time A está ganhando
+- Se o time B está ganhando
+- Se o jogo está zero a zero
+- Se o jogo está havendo um empate com gols
+
+> Cada partida necessariamente terá apenas um status.
+
+> A entrada será sempre composta por duas variáveis golsA e golsB que guardam, respectivamente, a quantidade de gols que cada um dos times A e B fez na partida até o momento. As variáveis são, claro, do tipo number.
+
+> Você deverá imprimir na tela apenas um dos quatro status possíveis:
+
+- TIME A GANHANDO - caso o time A esteja ganhando
+- TIME B GANHANDO - caso o time B esteja ganhando
+- SEM GOLS ATE O MOMENTO - caso o jogo esteja 0 a 0
+- EMPATE COM GOLS - caso o jogo esteja empatado, mas com ambos os times tendo marcado gols
+
+> Entrada
+````cmd
+3 0
+````
+
+> Saída
+````cmd
+TIME A GANHANDO
+````
+
+________________________________
+
 ### Cometa Harley
 
 > Segundo dados da revista Abril, em uma reportagem de 2009, o Halley é um famoso cometa que “visita a Terra” a cada, aproximadamente, 76 anos, quando atinge o ponto mais próximo do Sol. Sua última aparição foi em 1986.
