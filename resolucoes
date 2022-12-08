@@ -1,0 +1,80 @@
+void Tanque()
+            {
+
+                Console.WriteLine("Digite o nível do tanque: ");
+                int nivel = int.Parse(Console.ReadLine());
+
+                string saida = nivel >= 10 ? "TANQUE OK" : "TANQUE QUASE VAZIO";
+
+                Console.WriteLine(saida);
+            }
+            //Tanque();
+            Console.ReadKey();
+
+            /////////////////////////////////////////////////
+
+            void resultadoJogo()
+            {
+                Console.WriteLine("Quantos gols o time A fez? ");
+                int golsA = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Quantos gols o time B fez? ");
+                int golsB = int.Parse(Console.ReadLine());
+
+                string placar = golsA > golsB ? "TIME A GANHANDO" :
+                                golsA < golsB ? "TIME B GANHANDO" :
+                                golsA == golsB && golsA != 0 ? "EMPATE COM GOLS" : "SEM GOLS ATÉ O MOMENTO";
+
+                Console.WriteLine(placar);
+            }
+            //resultadoJogo();
+            Console.ReadKey();
+
+            ////////////////////////////////////////////////
+
+            void Cometa()
+            {
+
+                Console.WriteLine("Qual ano você deseja saber?");
+                int anoEntrada = int.Parse(Console.ReadLine());
+
+                int calculo = anoEntrada % 76;
+
+                string resultado = calculo == 0 ? "VAI PASSAR" : "NÃO VAI PASSAR";
+
+                Console.WriteLine(resultado);
+
+            }
+
+            //Cometa();
+            Console.ReadKey();
+
+            /////////////////////////////////////////////////
+
+            void CalcularMedia()
+            {
+
+                Console.WriteLine("Digite a 1ª nota");
+                double nota1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite a 2ª nota");
+                double nota2 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite a 3ª nota");
+                double nota3 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite a 4ª nota");
+                double nota4 = double.Parse(Console.ReadLine());
+
+                double somaDasNotas = (nota1 + nota2 + nota3 + nota4);
+                double quantidadeDeNotas = 4;
+                double media = (somaDasNotas / quantidadeDeNotas);
+
+                string resultado = media < 5 ? "Reprovado, a média foi: " + media :
+                                   media >= 7 ? "Aprovado, a média foi: " + media :
+                                   "Recuperação, a média foi: " + media;
+                Console.WriteLine(resultado);
+            }
+
+            //CalcularMedia();
+            Console.ReadKey();
