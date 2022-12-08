@@ -12,7 +12,9 @@ namespace App
         static void Main(string[] args) {
             double media = 5;
 
-            //string resultado = (media >= 7) ? "Aprovado" : "Reprovado";
+            //string resultado = (media >= 7) ? "Aprovado" 
+            //                                : (media >= 5.1 && media < 7) ? "Recuperação"
+            //                                                              :"Reprovado";
             //Console.WriteLine(resultado);
 
             //if (media >= 7)
@@ -21,18 +23,21 @@ namespace App
             //    Console.WriteLine("Recuperação");
             //else
             //    Console.WriteLine("Reprovado");
-           
-            switch (media) {
-                case 8:
-                    Console.WriteLine("Aprovado");
-                    break;
-                case 5:
-                    Console.WriteLine("Reprovado");
-                    break;
-                default: 
-                    Console.WriteLine("Não indentificado");
-                    break;
-            }
+
+            //switch (media) {
+            //    case double c1 when (c1 >= 7):
+            //        Console.WriteLine("Aprovado");
+            //        break;
+            //    case double c2 when (c2 >= 5.1 && c2 <= 7):
+            //        Console.WriteLine("Recuperação");
+            //    break;
+            //    case 5:
+            //        Console.WriteLine("Reprovado");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Não indentificado");
+            //        break;
+            //}           
             Console.ReadKey();
         }
     }
