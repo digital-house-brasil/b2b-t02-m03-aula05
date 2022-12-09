@@ -6,3 +6,11 @@ D:\dhieg\Documents\Jobs\DH\Turmas\B2B\IBRF\M03\b2b-t02-m03-aula05\App\App\obj\De
 D:\dhieg\Documents\Jobs\DH\Turmas\B2B\IBRF\M03\b2b-t02-m03-aula05\App\App\obj\Debug\App.csproj.CoreCompileInputs.cache
 D:\dhieg\Documents\Jobs\DH\Turmas\B2B\IBRF\M03\b2b-t02-m03-aula05\App\App\obj\Debug\App.exe
 D:\dhieg\Documents\Jobs\DH\Turmas\B2B\IBRF\M03\b2b-t02-m03-aula05\App\App\obj\Debug\App.pdb
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\bin\Debug\App.exe.config
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\bin\Debug\App.exe
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\bin\Debug\App.pdb
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\obj\Debug\App.csproj.AssemblyReference.cache
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\obj\Debug\App.csproj.SuggestedBindingRedirects.cache
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\obj\Debug\App.exe
+C:\Users\lucas\Documents\Estudos\Cursos\Digital House\M03\Aula 05\b2b-t02-m03-aula05\App\App\obj\Debug\App.pdb
