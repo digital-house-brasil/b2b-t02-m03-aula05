@@ -25,7 +25,9 @@ namespace App
                 Console.WriteLine("Digite o valor de B: ");
                 int golsB = int.Parse(Console.ReadLine());
             
-                string resultado = (golsA > golsB) ? "TIME A GANHANDO" : (golsB>golsA)? "TIME B GANHANDO" : ((golsA == 0) && (golsB== 0))? "SEM GOLS ATE O MOMENTO" : "EMPATE COM GOLS";
+                string resultado = (golsA > golsB) ? "TIME A GANHANDO" : 
+                                   (golsB > golsA) ? "TIME B GANHANDO" : 
+                                   ((golsA == 0) && (golsB== 0)) ? "SEM GOLS ATE O MOMENTO" : "EMPATE COM GOLS";
                 Console.WriteLine(resultado);
                 
             }
@@ -34,12 +36,62 @@ namespace App
                 Console.WriteLine("Digite o valor do ano: ");
                 int ano = int.Parse(Console.ReadLine());
 
+                Console.WriteLine("Digite o ano atual");
+                int anoAtual = int.Parse(Console.ReadLine());
+
                 int valor = 1986 - ano;
-                string resultado = (valor % 76 == 0) ? "VAI PASSAR" : "NÃO VAI PASSAR";
+                string resultado = (ano>anoAtual)? (valor % 76 == 0) ? "VAI PASSAR" : "NÃO VAI PASSAR" : "JÁ PASSOU";
                 Console.WriteLine(resultado);
             }
             void Questao4()
             {
+
+                Console.WriteLine("Digite a quantidade de professores: ");
+                float professores = float.Parse(Console.ReadLine());
+
+                float notaMaior = 0;
+                float notaMenor = 0;
+                float soma = 0;
+
+                for(int i = 1; i< professores+1; i++)
+                {
+                    Console.WriteLine("Nota do professor "+ professores+ " : ");
+                    float nota = float.Parse(Console.ReadLine());
+                
+                    if (i == 0)
+                    {
+                        notaMaior = nota;
+                        notaMenor = nota;
+                    }
+                    else if (notaMaior < nota)
+                    {
+                       notaMaior = nota;
+                    }
+                    else if (notaMenor > nota)
+                    {
+                        notaMenor = nota;
+                    }
+                    soma += nota;
+                }
+                if (notaMaior-notaMenor > 2)
+                {
+                    Console.WriteLine("Não houve consenso entre os corretores");
+                }
+                else
+                {
+                    if(soma/professores <5)
+                    {
+                        Console.WriteLine("Reprovado");
+                    }
+                    else if (soma/professores < 6.9)
+                    {
+                        Console.WriteLine("Recuperação");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Aprovado");
+                    }
+                }
 
             }
             void Questao5()
@@ -53,36 +105,14 @@ namespace App
                 Console.WriteLine("Ele está pulando(true/false): ");
                 bool pulando = bool.Parse(Console.ReadLine());
 
-                string resultado = (atacando == true) ? "atacando" : ((pulando == false) && (velocidade == 0)) ? "PARADO" :
-                    ((pulando == false) && (velocidade <= 30)) ? "ANDANDO" : ((pulando == false)
-                    && (velocidade > 30)) ? "Correndo" : (pulando == true) ? "PULANDO": "input Format";
+                string resultado = (atacando == true) ?                        "ATACANDO" : 
+                                  ((pulando == false) && (velocidade == 0))  ? "PARADO  " :
+                                  ((pulando == false) && (velocidade <= 30)) ? "ANDANDO " : 
+                                  ((pulando == false) && (velocidade > 30))  ? "CORRENDO" : 
+                                   (pulando == true)                         ? "PULANDO"  : "INPUT FORMAT";
                 
-                Console.WriteLine(resultado); //avisar o professor que tem erro no enunciado
+                Console.WriteLine(resultado);
             }
-            //double media = 5;
-
-            //string resultado = (media >= 7) ? "Aprovado" : "Reprovado";
-            //Console.WriteLine(resultado);
-
-            //if (media >= 7)
-            //    Console.WriteLine("Aprovado");
-            //else if (media >= 5.1 && media < 7)
-            //    Console.WriteLine("Recuperação");
-            //else
-            //    Console.WriteLine("Reprovado");
-
-            //switch (media) {
-            //    case 8:
-            //        Console.WriteLine("Aprovado");
-            //        break;
-            //    case 5:
-            //        Console.WriteLine("Reprovado");
-            //        break;
-            //    default: 
-            //        Console.WriteLine("Não indentificado");
-            //        break;
-            //}
-
             Questao1();
             Questao2();
             Questao3();
@@ -93,3 +123,26 @@ namespace App
         }
     }
 }
+//double media = 5;
+
+//string resultado = (media >= 7) ? "Aprovado" : "Reprovado";
+//Console.WriteLine(resultado);
+
+//if (media >= 7)
+//    Console.WriteLine("Aprovado");
+//else if (media >= 5.1 && media < 7)
+//    Console.WriteLine("Recuperação");
+//else
+//    Console.WriteLine("Reprovado");
+
+//switch (media) {
+//    case 8:
+//        Console.WriteLine("Aprovado");
+//        break;
+//    case 5:
+//        Console.WriteLine("Reprovado");
+//        break;
+//    default: 
+//        Console.WriteLine("Não indentificado");
+//        break;
+//}
